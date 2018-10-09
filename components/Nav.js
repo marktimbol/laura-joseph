@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const Nav = () => {
     return (
-        <nav className="h-12 bg-white border-b flex items-center justify-center">
+        <nav className="h-12 bg-white border-b border-solid border-grey-light flex items-center justify-center">
             <ul className="list-reset flex items-center justify-center mx-auto w-5/6">
                 <li className="text-center mx-8">
                     <Link href="/our-story">
