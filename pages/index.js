@@ -86,10 +86,92 @@ const Index = () => {
                 </div>
             </div>
 
+            <div style={{ margin: 50 }}></div>
 
-            <Link href="/rsvp">
-                <a>RSVP</a>
-            </Link>
+            <div className="rsvp h-64 bg-grey flex items-center justify-center">
+                <div className="w-2/3 mx-auto bg-white p-8">
+                    <Heading alignCenter>
+                        be our guest
+                    </Heading>
+                    <p className="text-center text-lg mt-6">Please confirm your arrival by January 1, 2019</p>
+
+                    <form>
+                        <div className="flex my-12">
+                            <div className="flex-1 mr-2">
+                                <div className="form-group mb-6">
+                                    <input type="text" className="text-lg w-full border-b px-2 py-2 outline-none" placeholder="Full Name" />
+                                </div> 
+                                <div className="form-group mb-6">
+                                    <input type="email" className="text-lg w-full border-b px-2 py-2 outline-none" placeholder="Email" />
+                                </div>   
+                                <div className="form-group mb-8">
+                                    <input type="text" className="text-lg w-full border-b px-2 py-2 outline-none" placeholder="Number of guests" />
+                                </div> 
+                                <div className="form-group">
+                                    <label className="text-lg text-grey-darkest">You are attending?</label>
+                                    <div className="mt-4">
+                                        <label className="mr-4"><input type="radio" name="attending" className="mr-2 text-lg" /> Yes</label>
+                                        <label className="mr-4"><input type="radio" name="attending" className="mr-2 text-lg" /> No</label>
+                                    </div>
+                                </div>                                                                                   
+                            </div>
+                            <div className="flex-1 ml-2">
+                                <textarea class="text-lg w-full h-full border px-2 py-2 outline-none" placeholder="Your Message"></textarea>
+                            </div>
+                        </div>
+                        <div className="flex justify-center">
+                            <button className="text-lg uppercase tracking-wide bg-black hover:bg-grey-darkest px-2 py-4 text-white w-64">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <style jsx>{`
+                .rsvp {
+                    height: 700px;
+                    background: url('/static/images/rsvp-bg.jpg');
+                    background-size: cover;
+                }
+            `}</style>                
+
+
+            <div style={{ margin: 50 }}>
+                <Heading alignCenter>
+                    our memories
+                </Heading>
+            </div>
+
+            <div className="memories w-5/6 mx-auto">
+                <div><img src="/static/images/memories-1.jpg" alt="" className="w-full h-full" /></div>
+                <div><img src="/static/images/memories-1.jpg" alt="" className="w-full h-full" /></div>
+                <div><img src="/static/images/memories-1.jpg" alt="" className="w-full h-full" /></div>
+                <div><img src="/static/images/memories-1.jpg" alt="" className="w-full h-full" /></div>
+                <div><img src="/static/images/memories-1.jpg" alt="" className="w-full h-full" /></div>
+                <div><img src="/static/images/memories-1.jpg" alt="" className="w-full h-full" /></div>
+                <div><img src="/static/images/memories-1.jpg" alt="" className="w-full h-full" /></div>
+                <div><img src="/static/images/memories-1.jpg" alt="" className="w-full h-full" /></div>
+                <div><img src="/static/images/memories-1.jpg" alt="" className="w-full h-full" /></div>
+                <div><img src="/static/images/memories-1.jpg" alt="" className="w-full h-full" /></div>
+                <div><img src="/static/images/memories-1.jpg" alt="" className="w-full h-full" /></div>
+                <div><img src="/static/images/memories-1.jpg" alt="" className="w-full h-full" /></div>
+                <div><img src="/static/images/memories-1.jpg" alt="" className="w-full h-full" /></div>
+                <div><img src="/static/images/memories-1.jpg" alt="" className="w-full h-full" /></div>
+                <div><img src="/static/images/memories-1.jpg" alt="" className="w-full h-full" /></div>
+            </div>
+                
+            <style jsx>{`
+                .memories {
+                    display: grid;
+                    grid-gap: 20px;
+                    grid-template-columns: 1fr 1fr 1fr;
+                }
+                .memories img {
+                    object-fit: cover;
+                    height: 300px;
+                }
+            `}</style>
+
+            <div style={{ margin: 50 }}></div>
         </Layout>
     )
 }
