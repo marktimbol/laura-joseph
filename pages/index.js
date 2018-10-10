@@ -4,13 +4,62 @@ import Head from 'next/head';
 import Hero from '../components/Hero';
 import Nav from '../components/Nav';
 import React, { Component } from 'react';
+import axios from 'axios';
 
-class Index extends Component {
+class Index extends Component
+{
+    constructor(props)
+    {
+        super(props);
+        this.state = {
+            name: '',
+            email: '',
+            guests: '',
+            attending: true,
+            message: ''
+        }
+    }
+
     componentDidMount()
     {
         new LazyLoad({
             elements_selector: ".lazy"
         });        
+    }
+
+    _onSubmitRsvp(e) {
+        console.log('this._onSubmitRsvp');
+        e.preventDefault();
+
+        let api_url = 'http://laura-api.test';
+        axios({
+            method: 'post',
+            url: `${api_url}/rsvp`,
+            data: {
+                name: 'Mark',
+                email: 'email',
+                guests: '2',
+                attending: true,
+                message: 'the message'                
+            }
+        }).then(response => {
+            console.log(response);
+        }).catch(error => {
+            console.log(error);
+        });
+
+        // axios.post(`${api_url}/rsvp`, {
+        //     name: 'Mark',
+        //     email: 'email',
+        //     guests: '2',
+        //     attending: true,
+        //     message: 'the message'
+        // }).then(response => {
+        //     console.log(response);
+        // }).catch(error => {
+        //     console.warn(error);
+        // })
+
     }
 
     render()
@@ -104,7 +153,7 @@ class Index extends Component {
                         </Heading>
                         <p className="text-center text-lg mt-6">Please confirm your arrival by January 1, 2019</p>
 
-                        <form>
+                        <form onSubmit={e => this._onSubmitRsvp(e)}>
                             <div className="flex my-12">
                                 <div className="flex-1 mr-2">
                                     <div className="form-group mb-6">
@@ -129,7 +178,12 @@ class Index extends Component {
                                 </div>
                             </div>
                             <div className="flex justify-center">
-                                <button className="text-lg uppercase tracking-wide bg-black hover:bg-grey-darkest px-2 py-4 text-white w-64">Submit</button>
+                                <button 
+                                    className="text-lg uppercase tracking-wide bg-black hover:bg-grey-darkest px-2 py-4 text-white w-64"
+                                    onClick={e => this._onSubmitRsvp(e)}
+                                >
+                                    Submit
+                                </button>
                             </div>
                         </form>
                     </div>
