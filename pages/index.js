@@ -244,7 +244,7 @@ class Index extends Component
                         thank you
                     </Heading>
                 </div>
-
+                    
             </Layout>           
         )
     }

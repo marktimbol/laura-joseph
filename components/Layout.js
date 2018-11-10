@@ -9,12 +9,17 @@ Router.onRouteChangeError = () => NProgress.done();
 
 const Layout = ({children}) => {
     return (
-        <div>
+        <div>   
             <Head>
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link href="/static/css/tailwind.css" rel="stylesheet" />
+                <link rel="stylesheet" type="text/css" href="/static/css/slick.css"/>
                 <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,500,700" rel="stylesheet" />
-                <script src="/static/js/lazyload.js"></script>
+
+                <script src="/static/js/lazyload.js" />
+                <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js" />
+                <script type="text/javascript" src="/static/js/slick.min.js" />
+                <script type="text/javascript" src="/static/js/slick.js" />
             </Head>
             
             <div className="content">
