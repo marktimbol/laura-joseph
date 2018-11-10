@@ -6,20 +6,20 @@ const Hero = () => {
             <div className="hero_slider">
                 <div className="slide slide--1">
                     <img src="/static/images/wreath-white.svg" className="hero__wreath hero__wreath--up" alt="" />
-                    <h1 className="hero__title shadow">Laura &amp; Joseph</h1>
-                    <p className="hero__date shadow">January 1, 2019</p>
+                    <h1 className="hero__title">Laura &amp; Joseph</h1>
+                    <p className="hero__date">January 1, 2019 <small>-TBA</small></p>
                     <img src="/static/images/wreath-white.svg" className="hero__wreath hero__wreath--down" alt="" />
                 </div>
                 <div className="slide slide--2">
                     <img src="/static/images/wreath-white.svg" className="hero__wreath hero__wreath--up" alt="" />
-                    <h1 className="hero__title shadow">Laura &amp; Joseph</h1>
-                    <p className="hero__date shadow">January 1, 2019</p>
+                    <h1 className="hero__title">Laura &amp; Joseph</h1>
+                    <p className="hero__date">January 1, 2019 <small>-TBA</small></p>
                     <img src="/static/images/wreath-white.svg" className="hero__wreath hero__wreath--down" alt="" />
                 </div>              
                 <div className="slide slide--3">
                     <img src="/static/images/wreath-white.svg" className="hero__wreath hero__wreath--up" alt="" />
-                    <h1 className="hero__title shadow">Laura &amp; Joseph</h1>
-                    <p className="hero__date shadow">January 1, 2019</p>
+                    <h1 className="hero__title">Laura &amp; Joseph</h1>
+                    <p className="hero__date">January 1, 2019 <small>-TBA</small></p>
                     <img src="/static/images/wreath-white.svg" className="hero__wreath hero__wreath--down" alt="" />
                 </div>              
             </div>
@@ -55,6 +55,7 @@ const Hero = () => {
                     word-spacing: 8px;
                     font-weight: normal;
                     margin-bottom: .5rem;
+                    text-align: center;
                     font-family: 'noelan script', serif;
                 }
                 .hero__date {

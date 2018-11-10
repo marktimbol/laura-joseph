@@ -9,4 +9,13 @@ $(document).ready(function() {
         pauseOnFocus: false,
         pauseOnHover: false,
     });
+
+    $('.venue_slider').slick({
+        arrows: false,
+        autoplay: true,
+        fade: true,
+        autoplaySpeed: 5000,
+        pauseOnFocus: false,
+        pauseOnHover: false,
+    });    
 });
