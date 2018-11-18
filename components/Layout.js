@@ -14,12 +14,13 @@ const Layout = ({children}) => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link href="/static/css/tailwind.css" rel="stylesheet" />
                 <link rel="stylesheet" type="text/css" href="/static/css/slick.css"/>
-                <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,500,700" rel="stylesheet" />
 
-                <script src="/static/js/lazyload.js" />
+                {/* <script src="/static/js/lazyload.js" /> */}
                 <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js" />
                 <script type="text/javascript" src="/static/js/slick.min.js" />
                 <script type="text/javascript" src="/static/js/slick.js" />
+
+                <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,500,700" rel="stylesheet" />
             </Head>
             
             <div className="content">
@@ -28,12 +29,12 @@ const Layout = ({children}) => {
             
             <style jsx global>{`
                 @font-face {
-                    font-family: 'noelan script';
-                    src: url('/static/fonts/noelan_script-webfont.woff2') format('woff2'),
-                         url('/static/fonts/noelan_script-webfont.woff') format('woff');
+                    font-family: 'Blingtastic';
+                    src: url('/static/fonts/blingtastic_script-webfont.woff2') format('woff2'),
+                         url('/static/fonts/blingtastic_script-webfont.woff') format('woff');
                     font-weight: normal;
                     font-style: normal;
-                }
+                }                
                 
                 body {
                     font-size: 14px;

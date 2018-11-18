@@ -7,19 +7,19 @@ const Hero = () => {
                 <div className="slide slide--1">
                     <img src="/static/images/wreath-white.svg" className="hero__wreath hero__wreath--up" alt="" />
                     <h1 className="hero__title">Laura &amp; Joseph</h1>
-                    <p className="hero__date">January 1, 2019 <small>-TBA</small></p>
+                    <p className="hero__date">January 6, 2019</p>
                     <img src="/static/images/wreath-white.svg" className="hero__wreath hero__wreath--down" alt="" />
                 </div>
                 <div className="slide slide--2">
                     <img src="/static/images/wreath-white.svg" className="hero__wreath hero__wreath--up" alt="" />
                     <h1 className="hero__title">Laura &amp; Joseph</h1>
-                    <p className="hero__date">January 1, 2019 <small>-TBA</small></p>
+                    <p className="hero__date">January 6, 2019</p>
                     <img src="/static/images/wreath-white.svg" className="hero__wreath hero__wreath--down" alt="" />
                 </div>              
                 <div className="slide slide--3">
                     <img src="/static/images/wreath-white.svg" className="hero__wreath hero__wreath--up" alt="" />
                     <h1 className="hero__title">Laura &amp; Joseph</h1>
-                    <p className="hero__date">January 1, 2019 <small>-TBA</small></p>
+                    <p className="hero__date">January 6, 2019</p>
                     <img src="/static/images/wreath-white.svg" className="hero__wreath hero__wreath--down" alt="" />
                 </div>              
             </div>
@@ -75,6 +75,12 @@ const Hero = () => {
                 
                 .hero__wreath--down {
                     
+                }
+
+                @media only screen and (max-width: 414px) {
+                    .slide { 
+                        background-position: center;
+                    }
                 }
 
             `}</style>

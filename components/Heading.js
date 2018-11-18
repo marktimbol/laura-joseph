@@ -4,11 +4,11 @@ const Heading = (props) => {
             {props.children}
             <style jsx>{`
                 h2 {
-                    font-size: 32px;
+                    font-size: ${props.fontSize ? props.fontSize : '50px'};
                     line-height: 48px;
                     word-spacing: 8px;
                     font-weight: normal;
-                    font-family: 'noelan script', Arial;
+                    font-family: 'Blingtastic', sans-serif;
                     text-align: ${props.alignCenter ? 'center' : 'left'};
                 }
             `}</style>
